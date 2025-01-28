@@ -1,6 +1,9 @@
 name: Deploy to Cloudflare Workers(Staging)
 
 on:
+  push:
+    branches:
+      - master
   pull_request_target:
     paths-ignore:
       - '**.md'
