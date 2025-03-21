@@ -7,7 +7,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "p.weday.us.kg"
+CUSTOM_DOMAIN = "p.diedye.org.es"
 
 [env.dev.vars]
 MODE = "debug"
@@ -16,13 +16,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
  routes = [
-   { pattern = "docker.p.weday.us.kg", custom_domain = true },
-   { pattern = "quay.p.weday.us.kg", custom_domain = true },
-   { pattern = "gcr.p.weday.us.kg", custom_domain = true },
-   { pattern = "k8s-gcr.p.weday.us.kg", custom_domain = true },
-   { pattern = "k8s.p.weday.us.kg", custom_domain = true },
-   { pattern = "ghcr.p.weday.us.kg", custom_domain = true },
-   { pattern = "cloudsmith.p.weday.us.kg", custom_domain = true },
+   { pattern = "docker.p.diedye.org.es", custom_domain = true },
+   { pattern = "quay.p.diedye.org.es", custom_domain = true },
+   { pattern = "gcr.p.diedye.org.es", custom_domain = true },
+   { pattern = "k8s-gcr.p.diedye.org.es", custom_domain = true },
+   { pattern = "k8s.p.diedye.org.es", custom_domain = true },
+   { pattern = "ghcr.p.diedye.org.es", custom_domain = true },
+   { pattern = "cloudsmith.p.diedye.org.es", custom_domain = true },
  ]
 
 [env.production.vars]
